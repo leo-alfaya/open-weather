@@ -1,8 +1,16 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
+import Wrapper from './Wrapper';
+import CitySearch from '../CitySearch';
 
 const WeekWeatherArea = () => (
-  <Grid container item md={7}/>
+  <Wrapper
+    container 
+    item 
+    justify="center"
+    md={7}
+  >
+    <CitySearch />
+  </Wrapper>
 )
 
 export default WeekWeatherArea;

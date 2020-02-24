@@ -12,7 +12,6 @@ const Wrapper = styled(Grid)({
       filter: 'invert(100%)'
     }
   } 
-
 })
 
 export default Wrapper;
