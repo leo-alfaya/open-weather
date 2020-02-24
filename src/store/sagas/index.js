@@ -1,6 +1,6 @@
 import { call, all, put, takeLatest } from 'redux-saga/effects';
-import { LOAD_WEATHER_SAGA, SET_WEATHER } from '../store/actions';
-import { getByCityNAme } from '../services/api';
+import { LOAD_WEATHER_SAGA, SET_WEATHER } from '../actions';
+import { getByCityNAme } from '../../services/api';
 
 function* loadWheaterSaga(action) {
   let jsonResponse = yield call(getByCityNAme, action.payload)
