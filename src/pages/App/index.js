@@ -1,16 +1,16 @@
 import React from 'react';
-import ContentWrapper from './ContentWrapper'
+import Wrapper from './Styled';
 import Menu from '../../containers/Menu';
 import WeekWeatherArea from '../../containers/WeekWeatherArea';
 import SelectedDay from '../../containers/SelectedDay';
 
 const App = () => {
   return (
-    <ContentWrapper container >
+    <Wrapper container >
      <Menu />
      <WeekWeatherArea />
      <SelectedDay />
-    </ContentWrapper>
+    </Wrapper>
   );
 }
 

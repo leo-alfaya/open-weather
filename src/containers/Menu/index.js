@@ -1,5 +1,5 @@
 import React from 'react';
-import Wrapper from './Wrapper';
+import Wrapper from './Styled';
 import logo from '../../icons/logo.png';
 import home from '../../icons/home.png';
 import Timer from '../../components/Timer';

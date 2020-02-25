@@ -4,7 +4,7 @@ import {
   InputAdornment,
   IconButton
 } from '@material-ui/core';
-import StyledInput from './StyledInput';
+import StyledInput from './Styled';
 
 const Search = ({ placeholder, onClick }) => {
   const [ value, setValue ] = useState("")

@@ -6,7 +6,7 @@ import {
   Typography, 
   Box
 } from '@material-ui/core';
-import Wrapper from './Wrapper';
+import Wrapper from './Styled';
 import Search from '../../components/Search';
 
 const CitySearch = ({ loadWeather }) => {
@@ -23,12 +23,11 @@ const CitySearch = ({ loadWeather }) => {
       <Typography className="hour">
         Selecione uma Cidade
       </Typography>
-      <Box pt={4} pb={7}>
-        <Search 
-          placeholder="Pesquisar por cidade"
-          onClick={loadWeather}  
-        />
-      </Box>
+      <Box pb={4} />
+      <Search 
+        placeholder="Pesquisar por cidade"
+        onClick={loadWeather}  
+      />
     </Wrapper>
   )
 }
