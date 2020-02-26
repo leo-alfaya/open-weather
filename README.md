@@ -2,6 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+To install the app, you can run: 
+
+### `yarn install`
+
 In the project directory, you can run:
 
 ### `yarn start`
@@ -18,6 +22,6 @@ Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ## `Dependências do projeto`
-- material-ui: Biblioteca para interface
-- lodash: Biblioteca para manipulação de dados
-- moment: Biblioteca para manipulação de datas
+- material-ui: UI library
+- lodash: helper lib to work with data structures
+- moment: helper lib to work with date
