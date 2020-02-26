@@ -1,4 +1,5 @@
 import { SET_WEATHER } from '../actions';
+import prepareWeather from '../../utils/prepareData';
 
 const initialState = {
   city: {},
@@ -12,7 +13,7 @@ const cityReducer = (state = initialState, action) => {
     case SET_WEATHER:
       return Object.assign({}, state, {
         city: payload.city,
-        weather: payload.list
+        weather: prepareWeather(payload.list)
       })
     default: 
       return state
