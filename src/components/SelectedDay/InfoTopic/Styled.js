@@ -7,6 +7,7 @@ const Wrapper = styled(Grid)({
     lineHeight: '28px',
     fontWeight: 'bold',
     color: '#4e2b67',
+    textTransform: 'capitalize',
     '&.value': {
       color: '#8897ac'
     }

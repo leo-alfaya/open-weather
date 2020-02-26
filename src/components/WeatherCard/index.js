@@ -2,6 +2,8 @@ import React from 'react';
 import { Typography, Box } from '@material-ui/core';
 import { Wrapper, Header, Content } from './Styled';
 import cloud from '../../icons/cloud.png';
+import average from '../../utils/average';
+import moment from 'moment';
 
 const WeatherCard = ({ dayWeather }) => (
   <Wrapper>
@@ -11,20 +13,20 @@ const WeatherCard = ({ dayWeather }) => (
     >
       <img src={cloud} alt="rainy icon" />
       <Typography>
-        SEG
+        {moment(dayWeather[0].dt_txt).format('ddd')}
       </Typography>
     </Header>
     <Box pb={5} />
     <Content>
       <Typography className="temperature">
-        24.7°C
+        {`${average(dayWeather, 'main.temp', 1)}°C`}
       </Typography>
       <Box pb={2} />
       <Typography>
-        3.15m/s
+      {`${average(dayWeather, 'wind.speed', 2)}m/s`}
       </Typography>
       <Typography>
-        clouds:33%
+      clouds: {`${average(dayWeather, 'clouds.all', 0)} %`}
       </Typography>
     </Content>
   </Wrapper>

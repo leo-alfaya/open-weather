@@ -3,6 +3,7 @@ import CloudBackground from '../../icons/cloud-background.png';
 import Grid from '@material-ui/core/Grid';
 
 const Wrapper = styled(Grid)({
+  maxHeight: '100%',
   position: 'relative',
   padding: '36px 0',
   backgroundColor: '#fff',
@@ -46,6 +47,9 @@ const MainInfo = styled(Grid)({
         left: '100%',
         fontSize: '36px'        
       }
+    },
+    '&.description': {
+      textTransform: 'capitalize'
     }
   }
 })
