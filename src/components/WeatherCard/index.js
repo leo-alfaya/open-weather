@@ -4,10 +4,7 @@ import { Wrapper, Header, Content } from './Styled';
 import cloud from '../../icons/cloud.png';
 
 const WeatherCard = () => (
-  <Wrapper
-    item
-    md={3}
-  >
+  <Wrapper>
     <Header 
       container
       justify="space-between"  

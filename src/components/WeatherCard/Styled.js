@@ -1,5 +1,5 @@
 import { styled } from '@material-ui/core/styles';
-import { Card, CardContent, Grid } from '@material-ui/core';
+import { Card, Grid } from '@material-ui/core';
 
 const Wrapper = styled(Card)({
   width: '22%',
@@ -15,6 +15,10 @@ const Wrapper = styled(Card)({
   },
   '&:nth-child(n+5)': {
     marginTop: '25px'
+  },
+  '&:hover': {
+    background: '#462a5a',
+    borderColor: '#462a5a'
   }
 })
 
