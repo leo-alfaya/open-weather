@@ -7,13 +7,20 @@ import {
 import StyledInput from './Styled';
 
 const Search = ({ placeholder, onClick }) => {
-  const [ value, setValue ] = useState("")
+  const [ value, setValue ] = useState("");
+  const handleEnterPress = ( event ) => {
+    if(event.key === 'Enter'){
+      onClick(value);
+    }
+  }
+
 
   return (
     <StyledInput
       value={value}
       placeholder={placeholder}
       onChange={( event ) => setValue(event.target.value)}
+      onKeyPress={handleEnterPress}
       endAdornment={
         <InputAdornment position="end">
           <IconButton
