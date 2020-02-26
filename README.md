@@ -25,3 +25,6 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 - material-ui: UI library
 - lodash: helper lib to work with data structures
 - moment: helper lib to work with date
+
+## Como utilizar a aplicação  
+Preencher o nome da cidade no campo de buscas e pressiona a tecla "Enter" ou clicar no ícone de busca
