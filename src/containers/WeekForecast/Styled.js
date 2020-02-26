@@ -8,4 +8,14 @@ const Wrapper = styled(Grid)({
   }
 })
 
-export default Wrapper;
+const ForecastList  = styled('div')({
+  display: 'grid',
+  gridTemplateColumns: 'repeat(4, 1fr)',
+  gridColumnGap: '24px',
+  gridRowGap: '24px'
+})
+
+export {
+  Wrapper,
+  ForecastList
+};

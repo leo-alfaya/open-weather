@@ -1,9 +1,10 @@
 import React from 'react';
-import Wrapper from './Styled';
-import { Typography, Box, Grid } from '@material-ui/core';
+import { connect } from 'react-redux';
+import { Wrapper, ForecastList } from './Styled';
+import { Typography, Box } from '@material-ui/core';
 import WeatherCard from '../../components/WeatherCard';
 
-const WeatherForecast = () => {
+const WeatherForecast = ({ weather }) => {
   return (
     <Wrapper 
       container
@@ -17,18 +18,20 @@ const WeatherForecast = () => {
         Previsão para a semana:
       </Typography>
       <Box pb={3}/>
-      <Grid 
-        container
-        justify="space-between"
-      >
-        <WeatherCard />
-        <WeatherCard />
-        <WeatherCard />
-        <WeatherCard />
-        <WeatherCard />
-      </Grid>
+      <ForecastList>
+        {weather.map((dayWeather, idx) => (
+          <WeatherCard dayWeather={dayWeather} key={idx}/>
+        ))}
+      </ForecastList>
     </Wrapper>
   )
 }
 
-export default WeatherForecast;
+const mapStateToProps = state => ({
+  weather: state.weather
+})
+
+export default connect(
+  mapStateToProps,
+  null
+)(WeatherForecast);

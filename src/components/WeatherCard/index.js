@@ -3,7 +3,7 @@ import { Typography, Box } from '@material-ui/core';
 import { Wrapper, Header, Content } from './Styled';
 import cloud from '../../icons/cloud.png';
 
-const WeatherCard = () => (
+const WeatherCard = ({ dayWeather }) => (
   <Wrapper>
     <Header 
       container
